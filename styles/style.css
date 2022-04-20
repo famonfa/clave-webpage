@@ -14,40 +14,27 @@ body {
 
 /*HEADER*/
 
-header {
-    background: rgb(216, 216, 216, 0.4);
-    width: 100%;
-    padding: 0.3em;
-    display: flex;
-    justify-content: space-between;
-}
 
-.header-fixed {
-    position: fixed;
-}
-
-h1 {
+.navbar-brand {
     font-weight: 400;
+    font-size: 1.8rem;
     margin-left: 0.4em;
-    transition: all 1s;
+    transition: all 1s;   
 }
 
-h1:hover {
+.navbar-brand:hover {
     font-size: 4rem;
 }
 
-nav {
-    margin-top: 0.8em; 
-}
 
 li {
-    display: inline-block;
     transition: all 1s;
 }
 
 li:hover {
     font-size: 3rem;
 }
+
 
 a {
     margin-left: 0.5em;
@@ -59,48 +46,29 @@ a:visited {
 }
 
 .btn {
-    width: 5em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: white;
-    margin: none;
-    border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: ease-out 1s;
-    margin-top: 0.4em;
+    transition: ease-out 1s;  
     
+   
 }
 
-.btn:hover {
-    color: white;
-    box-shadow: inset -200px 0 0 0 #C0CEDD;
-    font-size: 1.1rem;
-    
-   }
-
-.hamburger {
-    width: 1.3em;
-    margin-right: 0.5em;
-    display: none;  
-    
-}
-
-@media (max-width: 450px) {
- 
-    .hamburger {
-        display: block;
-    }
-    ul {
-        display: none;
-    }
-
-    .btn {
-        display: none;
+@media (min-width: 950px){
+    .collapse {
+        display: flex;
+        justify-content: space-between;
     }
 }
+
+.navbar-toggler {
+    border: none;
+}
+
+
 
 /*HEADER*/
+
+
 
 /*INDEX*/
 
@@ -115,7 +83,7 @@ a:visited {
     ;
 }
 
-.header-fixed-index {
+.header-index {
     grid-area: header;
 }
 
@@ -152,6 +120,8 @@ a:visited {
     width: 100%;
     min-width: auto;
 }
+
+
 
 @media (min-width: 500px) {
  
@@ -202,7 +172,7 @@ a:visited {
     ;
 }
 
-.header-conocenos {
+header {
     grid-area: head;
 }
 
@@ -212,6 +182,8 @@ a:visited {
 
 .info {
     grid-area: info;
+    width: 100%;  
+  
 }
 
 .footer-conocenos {
@@ -232,12 +204,6 @@ a:visited {
 .img-conocenos {
     width: 25%;
     min-width: 275px;
-}
-
-.info {
-    width: 100%;  
-    min-width: 150px;
-    margin-top: -1em;
 }
 
 .info h2 {
@@ -266,7 +232,7 @@ a:visited {
     
     .info {
         margin-top: 2.5em;
-        width: 45%;  
+        width: 70%;  
         min-width: 300px;
         
     }
@@ -319,73 +285,47 @@ a:visited {
 
 
 
-.gallery-muebles {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr;
-    padding: 5em ;
-}
 
-.flex-grid-muebles {
-    display: flex;
-    justify-content: center;
-}
 
-.gallery-muebles img {
-    width: 250px;
-    max-width: fit-content;
+
+.col img {
+   
+    width: 100%;
+    padding-top: 0.5em;
     cursor:pointer;
-    padding: 0.15em;
-}
 
-@media  (min-width: 500px) {
-    .gallery-muebles {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-@media  (min-width: 800px) {
-    .gallery-muebles {
-        grid-template-columns: 1fr 1fr 1fr;
-    } 
-}
-
-@media  (min-width: 1100px) {
-    .gallery-muebles {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
     
+}
+
+
+*/
 /*PRODUCTOS*/
 
 /*MADERAS*/
 
 .main-maderas {
     padding: 2em 2em; 
-}
-
-
-.container-maderas-grid {
-    display: grid;
-    grid-gap: 3em;
-    grid-template-columns: 1fr ;
     
 }
 
-.wood {
+
+.container__maderas {
+ display: flex;
+ justify-content: center; 
+ flex-wrap: wrap; 
+}
+
+.card {
     display: flex;
-    flex-direction: column;
     justify-content:center;
     background: rgb(216, 216, 216, 0.4);
-    padding: 0.5em;
+    padding: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
     z-index: 1;
-    
 }
 
-
-
-.img-hover {
+.card-img-top {
     max-width: 8em;
     align-self: center;
     border-radius: 200px;
@@ -395,17 +335,17 @@ a:visited {
     
 }
 
-.img-hover:hover  {
+.card-img-top:hover  {
     transform: scale(1.1);
     border: 1.5px solid #fff;
 }
 
-.wood h3 {
+.card-title {
     font-weight: 500;
     padding: 0.5em;
 }
 
-.info-wood {
+.card-text {
     width: 80%;
     text-align: center;
     align-self: center;
@@ -414,26 +354,15 @@ a:visited {
 
 }
 
-@media  (min-width: 700px) {
 
-    .main-maderas {
-        padding: 6em; 
-       
-    }
-    .container-maderas-grid {
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
-
-}
-
-
+*/
 /*MADERAS*/
 
 
 /*CONTACTO*/
 
 .main-contacto {
-   padding: 3em;
+   padding: 3em ;
 }
 
 .container-contacto {
