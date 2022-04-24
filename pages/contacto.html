@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>clave-contacto</title>
+    <title>clave</title>
 </head>
-<body>
+
+
+
+    <header class="header-fixed-index">   
     
-    <header>          
-        <h1> <a href="../index.html">clave</a></h1>
-      <nav>    
-        <ul>
-            <li><a href="./conocenos.html">conocenos</a></li>
-            <li><a href="./muebles.html">muebles</a></li>
-            <li><a href="./maderas.html">maderas</a></li>           
-        </ul>
-       </nav>
-          <a  href="./contacto.html"><button class="btn">contacto</button></a>
-          <img class="hamburger" src="../assets/bars-solid.svg" alt="hamburger">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">clave</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/conocenos.html">conocenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/muebles.html">muebles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/maderas.html">maderas</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                 <a href="../pages/contacto.html"><button class="btn btn-outline-success" >contacto</button></a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="main-contacto">
@@ -35,7 +52,29 @@
                 <textarea name="consulta" id="" cols="40" rows="5" placeholder="dejá aquí tu consulta."></textarea>
                 <label for="newsletter">¿querés recibir nuestro newsletter?</label>
                 <input class="round-input" name="si" type="checkbox"> 
-                <button class="btn-contacto" type="submit">enviar</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-contacto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    enviar
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">clave</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        muchas gracias por tu consulta!
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn-contacto btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 <button class="btn-contacto" type="reset">limpiar</button>      
             </form>
         </div>
@@ -51,6 +90,7 @@
         </div>
     </footer>
 
+<script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

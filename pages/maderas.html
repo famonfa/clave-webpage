@@ -4,55 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Document</title>
 </head>
 <body>
     
-    <header class="header-fixed">           
-                <h1> <a href="../index.html">clave</a></h1>
-        <nav>    
-            <ul>
-                <li><a href="./conocenos.html">conocenos</a></li>
-                <li><a href="./muebles.html">muebles</a></li>
-                <li><a href="./maderas.html">maderas</a></li>           
-            </ul>
-        </nav>
-                <a  href="./contacto.html"><button class="btn">contacto</button></a>
-                <img class="hamburger" src="../assets/bars-solid.svg" alt="hamburger">
+    <header class="header-fixed-index">   
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">clave</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/conocenos.html">conocenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/muebles.html">muebles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/maderas.html">maderas</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                 <a href="../pages/contacto.html"><button class="btn btn-outline-success" >contacto</button></a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
+
     <main class="main-maderas">
-        
-        <div class="container-maderas-grid">
-            <div class="wood one">
-                <h3>petiribi</h3>
-                <img class="img-hover" src="../assets/img/peteribi-madersama.jpg" alt="petiribi">
-                <p class="info-wood">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Porro nemo expedita laborum odio pariatur vitae. 
-                Pariatur voluptates harum temporibus fugiat magni dolores sunt voluptas, 
-                dignissimos voluptatum impedit, fugit delectus soluta!</p>
+        <div class="container__maderas">
+
+        <div class="card" style="width: 18rem;">
+            <h5 class="card-title">petiribi</h5>
+            <img src="../assets/img/peteribi-madersama.jpg" class="card-img-top" alt="...">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ad facere quasi mollitia dolorum eligendi voluptas, rerum eius sequi nam earum itaque libero est voluptatum necessitatibus. Maxime omnis magni placeat}
+              </p>
+       
             </div>
-            <div class="wood two">
-                <h3>anchico</h3>
-                <img class="img-hover" src="../assets/img/D_NQ_NP_919744-MLA29141569810_012019-O.webp" alt="anchico">
-                <p class="info-wood">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Porro nemo expedita laborum odio pariatur vitae. 
-                Pariatur voluptates harum temporibus fugiat magni dolores sunt voluptas, 
-                dignissimos voluptatum impedit, fugit delectus soluta!</p>
+
+          <div class="card" style="width: 18rem;">
+                <h5 class="card-title">anchico</h5>
+            <img src="../assets/img/D_NQ_NP_919744-MLA29141569810_012019-O.webp" class="card-img-top" alt="...">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo saepe mollitia, dolorum reprehenderit sunt similique nostrum? Accusantium, et sapiente harum unde distinctio eum, officia corrupti facere veritatis rerum pariatur quidem.</p>
+             
             </div>
-            <div class="wood three">
-                <h3>kiri</h3>
-                <img class="img-hover" src="../assets/img/D_Q_NP_839446-MLA29167538504_012019-AB.webp" alt="">
-                <p class="info-wood">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Porro nemo expedita laborum odio pariatur vitae. 
-                Pariatur voluptates harum temporibus fugiat magni dolores sunt voluptas, 
-                dignissimos voluptatum impedit, fugit delectus soluta!</p>
+       
+
+          <div class="card" style="width: 18rem;">
+                <h5 class="card-title">kiri</h5>
+            <img src="../assets/img/D_Q_NP_839446-MLA29167538504_012019-AB.webp" class="card-img-top" alt="...">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt magnam velit voluptatibus vero harum aliquam consectetur dolorem. Aliquam, magni. Nulla minima voluptatem facere consectetur animi incidunt laborum architecto minus!</p>
+            
             </div>
+            </div>
+          </div>
         </div>
-        
-    </main>
    
     <hr>
    
@@ -63,6 +78,8 @@
             <a href="https://instagram.com"><img class="socials" src="../assets/img/instagram-brands.svg" alt="instagram-logo"></a>      
         </div>
     </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

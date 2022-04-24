@@ -4,32 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>conocenos</title>
 </head>
-<body class="body-conocenos">
+<body">
 
-    <header class="header-conocenos">          
-            <h1> <a href="../index.html">clave</a></h1>
-        <nav>    
-            <ul>
-            <li><a href="./conocenos.html">conocenos</a></li>
-            <li><a href="./muebles.html">muebles</a></li>
-            <li><a href="./maderas.html">maderas</a></li>          
-            </ul>
-        </nav>
-            <a  href="./contacto.html"><button class="btn">contacto</button></a>
-            <img class="hamburger" src="../assets/bars-solid.svg" alt="hamburger">
+    <header class="header-conocenos">   
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">clave</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/conocenos.html">conocenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/muebles.html">muebles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/maderas.html">maderas</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                 <a href="../pages/contacto.html"><button class="btn btn-outline-success" >contacto</button></a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
-        <div class="img-parent">
-            <div class="img-conocenos">
+    <main>
+        
+        <div class="container-conocenos">  
             <img class="img-conocenos" src="../assets/img/casa-clara (1).jpg" alt="casa taller">
             <img class="img-conocenos" src="../assets/img/petersen.jpg" alt="muebleria">
-            </div>
-        </div>
-        
+         
         <div class="info">
             <h2>quiénes somos</h1>
             <p class="whoarewe">Clave Taller nace de la sinergia de 3 egresados de la carrera de FADU de Diseño Industrial. </p> 
@@ -39,8 +54,10 @@
             <p class="whoarewe">  Navegando entre la simpleza estética y la complejidad resolutiva, su trabajo cubre diversos campos que van desde el diseño de pequeños objetos hasta proyectos integrales de interiorismo, así como también de la creación de piezas únicas o la producción en serie.</p>
                 
             <p class="whoarewe">  Clave taller fue fundado en 2019 y es dirigido por Bernardo Bruno, Federico Burd y Pablo Bozzani</p>
+            </div>
         </div>
-     
+
+    </main>    
 
   
 
@@ -54,5 +71,6 @@
         </div>
     </footer>
     
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
