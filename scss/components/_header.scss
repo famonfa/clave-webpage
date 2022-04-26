@@ -1,0 +1,56 @@
+
+/*header*/
+header {
+    background: rgb(216, 216, 216,);
+    .navbar-brand {
+        font-size: 2rem;
+        font-weight: 400;
+        transition: all 1s;
+        &:hover { 
+            font-size: 3rem; 
+        } }
+
+    .li {
+        transition: all 1s;
+        &:hover {
+            font-size: 2rem;
+        }
+            a {
+            &:visited {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    
+    .btn {    
+        width: 5em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: white;
+        margin: none;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: ease-out 1s;
+        margin-top: 0.4em; 
+        &:hover {
+            color: white;
+            box-shadow: inset -200px 0 0 0 #C0CEDD;
+            font-size: 1.1rem;
+            }
+    }
+
+    }
+
+    /*header*/
+            
+           
+        
+    
+    
+
+
+
+
+
