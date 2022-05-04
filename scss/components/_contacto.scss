@@ -1,3 +1,10 @@
+/*contacto*/
+@mixin box ($dis, $pad,  $bck,) {
+    display: ($dis);
+    padding:($pad) ;
+    background-color: ($bck);
+}
+
 .main-contacto {
     padding: 3em;
     .container-contacto {
@@ -6,27 +13,17 @@
         flex-direction: column;
         align-items: center;
         form {
-            background-color: rgb(216, 216, 216, 0.4);
+            background-color:rgb(216, 216, 216, 0.4) ;
             padding: 2em;
             label {
-                display: block;
-                margin-bottom: 0.5em;
-                background-color:rgb(216, 216, 216, 0.4);
-                padding: 0.5;
+                @include box (block, 0.5em,rgb(216, 216, 216, 0.4))
             }
             input {
-                display: block;
-                margin-bottom: 0.5em;
-                background-color:rgb(216, 216, 216, 0.4);
-                padding: 0.5;
+                @extend label ;
                 border: white 2px solid;
             }
             textarea {
-                display: block;
-                margin-bottom: 0.5em;
-                background-color:rgb(216, 216, 216, 0.4);
-                padding: 0.5;
-                border: white 2px solid;
+                @extend input
             }
                 
             .btn-contacto {
@@ -45,25 +42,33 @@
 }
 @media  (max-width: 500px) {
   
+
+@mixin box-input ($p, $m) {
+    padding:($p);
+    margin:($m) ;
+}
+
     .main-contacto {
-        padding: 0.5em;
+        @include box-input(0.5em ,auto);
+        
         form {
-            padding: 0.5em;
+            @include box-input(0.5em ,auto);
             textarea {
-                padding: 0.5em
+                @include box-input(0.5em ,auto);
             }
             input {
-                padding: 0.5em
+                @include box-input(0.5em ,auto);
             }
             label {
-                padding: 0.5em
+                @include box-input(0.5em ,auto);
             }
             
         }
     } 
 }
 
-    
+ /*contacto*/
+   
 
     
  

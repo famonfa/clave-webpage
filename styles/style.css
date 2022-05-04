@@ -3,8 +3,8 @@ header {
   background: rgb(216, 216, 216);
 }
 header .navbar-brand {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 300;
   transition: all 1s;
 }
 header .navbar-brand:hover {
@@ -205,10 +205,10 @@ header .btn:hover {
 }
 .main-maderas .container__maderas .card .card-img-top:hover {
   transform: scale(1.1);
-  border: 1.5px solid #fff;
+  border: 1.5px solid white;
 }
 .main-maderas .container__maderas .card .card-img-top .card-title {
-  font-weight: 500;
+  font-weight: 300;
   padding: 0.5em;
 }
 .main-maderas .container__maderas .card .card-img-top .card-text {
@@ -219,6 +219,7 @@ header .btn:hover {
   border-top: 1px solid white;
 }
 
+/*contacto*/
 .main-contacto {
   padding: 3em;
 }
@@ -232,24 +233,12 @@ header .btn:hover {
   background-color: rgba(216, 216, 216, 0.4);
   padding: 2em;
 }
-.main-contacto .container-contacto form label {
+.main-contacto .container-contacto form label, .main-contacto .container-contacto form input, .main-contacto .container-contacto form textarea {
   display: block;
-  margin-bottom: 0.5em;
+  padding: 0.5em;
   background-color: rgba(216, 216, 216, 0.4);
-  padding: 0.5;
 }
-.main-contacto .container-contacto form input {
-  display: block;
-  margin-bottom: 0.5em;
-  background-color: rgba(216, 216, 216, 0.4);
-  padding: 0.5;
-  border: white 2px solid;
-}
-.main-contacto .container-contacto form textarea {
-  display: block;
-  margin-bottom: 0.5em;
-  background-color: rgba(216, 216, 216, 0.4);
-  padding: 0.5;
+.main-contacto .container-contacto form input, .main-contacto .container-contacto form textarea {
   border: white 2px solid;
 }
 .main-contacto .container-contacto form .btn-contacto {
@@ -267,20 +256,27 @@ header .btn:hover {
 @media (max-width: 500px) {
   .main-contacto {
     padding: 0.5em;
+    margin: auto;
   }
   .main-contacto form {
     padding: 0.5em;
+    margin: auto;
   }
   .main-contacto form textarea {
     padding: 0.5em;
+    margin: auto;
   }
-  .main-contacto form input {
+  .main-contacto form input, .main-contacto .container-contacto form textarea {
     padding: 0.5em;
+    margin: auto;
   }
-  .main-contacto form label {
+  .main-contacto form label, .main-contacto .container-contacto form input, .main-contacto .container-contacto form textarea {
     padding: 0.5em;
+    margin: auto;
   }
 }
+/*contacto*/
+/*footer*/
 footer {
   padding: 10px;
   bottom: auto;
@@ -299,6 +295,7 @@ footer p {
   margin: 5px 35px;
 }
 
+/*footer*/
 * {
   box-sizing: border-box;
   margin: 0;
