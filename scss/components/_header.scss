@@ -44,6 +44,18 @@ header {
 
     }
 
+    @media  (max-width: 990px) {
+        .navbar-collapse {
+          padding: 1em;
+          .nav-item {
+              width: 100%;
+              border-bottom: 3px solid white;
+              &:hover {
+                  background: white;
+              }
+          }
+        }
+    } 
     /*header*/
             
            

@@ -21,8 +21,48 @@
             margin: 1.5em;
         }
     }
-  
+
 }
+
+.card-we {
+    background: rgb(216, 216, 216, 0.4);
+    padding: 1em;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 50%;
+    margin-bottom: 2em;
+    align-items: center;
+    max-width: 330px;
+    height: 500px;
+    margin-top: 4em;
+    
+    .card-title {
+        margin-top: 0.5em;     
+        font-size: 1.6rem; 
+    }
+
+    .card-p {
+        width: 80%;
+        text-align: center;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 0.4em;
+    }
+    .nosotros {
+        max-width: 180px;
+        border-radius: 200px;
+        border: 2px solid white;
+    }
+}
+
+
+@media  (min-width: 950px) {
+}
+
+
+
 @media  (min-width: 950px) {
     .container-conocenos {
         flex-direction: row;
@@ -39,6 +79,17 @@
                 margin-left: 0.7em ;  
             }
         }
+    }
+
+    .we-wrapper {
+        display: flex;
+        margin-top: 2em;
+        padding: 1em;
+        flex-wrap: wrap;
+        .card-we {
+           border: 3px solid white;
+        }
+       
     }
 }
 
